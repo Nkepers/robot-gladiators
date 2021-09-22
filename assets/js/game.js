@@ -22,8 +22,6 @@ var fight = function (enemyNames) {
         var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.")
         //If player chooses FIGHT then:
         if (promptFight === "FIGHT" || promptFight === "fight") {
-
-
             //Subtract playerAttack from enemyHealth
             enemyHealth = enemyHealth - playerAttack;
             //Log a message showing it worked
@@ -72,6 +70,7 @@ var fight = function (enemyNames) {
 }
 //Execute the function
 for (var i = 0; i < enemyNames.length; i++) {
-    debugger;
-    fight(enemyNames[i]);
+    var pickedEnemyName = enemyNames[i];
+    enemyHealth = 50;
+    fight(pickedEnemyName);
 }
