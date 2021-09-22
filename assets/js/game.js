@@ -65,7 +65,7 @@ var fight = function (enemyNames) {
             }
             //If no (false), ask question again by running fight() again
             else {
-                fight();
+                fight(enemyRobot);
             }
         }
     }
